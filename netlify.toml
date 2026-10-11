@@ -1,0 +1,17 @@
+[build]
+  base = "frontend"
+  command = "npm run build:demo"
+  publish = "dist"
+
+[build.environment]
+  VITE_ENABLE_MOCKS = "true"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+[[headers]]
+  for = "/mockServiceWorker.js"
+  [headers.values]
+    Cache-Control = "no-cache"

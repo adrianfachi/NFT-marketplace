@@ -89,6 +89,32 @@ Playwright usa `http://127.0.0.1:4173`; não mantenha outro servidor diferente
 nessa porta durante os testes. Lighthouse grava medições e resumo em
 `reports/lighthouse/`. Requer Chrome disponível no ambiente.
 
+## Deploy na Netlify
+
+A configuração em [`../netlify.toml`](../netlify.toml) publica a build demo
+estática do frontend, define `VITE_ENABLE_MOCKS=true` durante o build e
+redireciona rotas da SPA para `index.html`. A publicação usa a pasta `dist`
+gerada dentro de `frontend`; não é necessário criar Netlify Functions para
+executar esta demo, pois o MSW intercepta as chamadas REST e Socket.IO no
+navegador.
+
+Conecte o repositório à Netlify e mantenha a configuração de build detectada
+no `netlify.toml`. A build de preview local equivalente é:
+
+```bash
+npm ci
+npm run build:demo
+npm run preview
+```
+
+Esse deploy é apenas uma demonstração: contas, sessões, carrinho e pedidos são
+simulados e armazenados localmente no navegador. Não use os mocks como
+backend de produção nem para armazenar dados reais. Uma implantação real
+precisa de uma API com autenticação e armazenamento persistente; o realtime
+Socket.IO também precisa de um serviço compatível fora das Netlify Functions.
+Não foram criadas funções serverless porque o projeto não define backend,
+persistência durável ou contrato para esses serviços.
+
 ## Selecionar e resetar cenários
 
 O cenário é selecionado, por ordem de prioridade, para cada requisição:
