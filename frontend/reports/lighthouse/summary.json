@@ -1,0 +1,187 @@
+{
+  "generatedAt": "2026-10-10T20:38:14.104Z",
+  "runs": [
+    {
+      "route": "/",
+      "mode": "desktop",
+      "run": 1,
+      "performance": 76,
+      "accessibility": 96,
+      "bestPractices": 96,
+      "seo": 82,
+      "lcp": 6021.867499999989,
+      "cls": 0,
+      "tbt": 24
+    },
+    {
+      "route": "/",
+      "mode": "desktop",
+      "run": 2,
+      "performance": 76,
+      "accessibility": 96,
+      "bestPractices": 96,
+      "seo": 82,
+      "lcp": 5976.14604999999,
+      "cls": 0,
+      "tbt": 2
+    },
+    {
+      "route": "/",
+      "mode": "desktop",
+      "run": 3,
+      "performance": 75,
+      "accessibility": 96,
+      "bestPractices": 96,
+      "seo": 82,
+      "lcp": 6078.328849999994,
+      "cls": 0,
+      "tbt": 64
+    },
+    {
+      "route": "/",
+      "mode": "mobile",
+      "run": 1,
+      "performance": 80,
+      "accessibility": 96,
+      "bestPractices": 96,
+      "seo": 82,
+      "lcp": 4488.2003,
+      "cls": 0.00008750282932444224,
+      "tbt": 89
+    },
+    {
+      "route": "/",
+      "mode": "mobile",
+      "run": 2,
+      "performance": 81,
+      "accessibility": 96,
+      "bestPractices": 96,
+      "seo": 82,
+      "lcp": 4487.553725,
+      "cls": 0.00008750282932444224,
+      "tbt": 72.5
+    },
+    {
+      "route": "/",
+      "mode": "mobile",
+      "run": 3,
+      "performance": 79,
+      "accessibility": 96,
+      "bestPractices": 96,
+      "seo": 82,
+      "lcp": 4629.9067,
+      "cls": 0.00008750282932444224,
+      "tbt": 135
+    },
+    {
+      "route": "/nfts/1",
+      "mode": "desktop",
+      "run": 1,
+      "performance": 75,
+      "accessibility": 96,
+      "bestPractices": 96,
+      "seo": 82,
+      "lcp": 6772.499849999983,
+      "cls": 0,
+      "tbt": 11.000000000000114
+    },
+    {
+      "route": "/nfts/1",
+      "mode": "desktop",
+      "run": 2,
+      "performance": 75,
+      "accessibility": 96,
+      "bestPractices": 96,
+      "seo": 82,
+      "lcp": 6687.161350000007,
+      "cls": 0,
+      "tbt": 0
+    },
+    {
+      "route": "/nfts/1",
+      "mode": "desktop",
+      "run": 3,
+      "performance": 75,
+      "accessibility": 96,
+      "bestPractices": 96,
+      "seo": 82,
+      "lcp": 6736.159700000008,
+      "cls": 0,
+      "tbt": 10
+    },
+    {
+      "route": "/nfts/1",
+      "mode": "mobile",
+      "run": 1,
+      "performance": 81,
+      "accessibility": 96,
+      "bestPractices": 96,
+      "seo": 82,
+      "lcp": 4466.6668,
+      "cls": 0.00008750282932444224,
+      "tbt": 51.5
+    },
+    {
+      "route": "/nfts/1",
+      "mode": "mobile",
+      "run": 2,
+      "performance": 81,
+      "accessibility": 96,
+      "bestPractices": 96,
+      "seo": 82,
+      "lcp": 4449.894375,
+      "cls": 0.00008750282932444224,
+      "tbt": 51
+    },
+    {
+      "route": "/nfts/1",
+      "mode": "mobile",
+      "run": 3,
+      "performance": 81,
+      "accessibility": 96,
+      "bestPractices": 96,
+      "seo": 82,
+      "lcp": 4427.0911,
+      "cls": 0.00008750282932444224,
+      "tbt": 53
+    }
+  ],
+  "medians": {
+    "/:desktop": {
+      "performance": 76,
+      "accessibility": 96,
+      "bestPractices": 96,
+      "seo": 82,
+      "lcp": 6021.867499999989,
+      "cls": 0,
+      "tbt": 24
+    },
+    "/:mobile": {
+      "performance": 80,
+      "accessibility": 96,
+      "bestPractices": 96,
+      "seo": 82,
+      "lcp": 4488.2003,
+      "cls": 0.00008750282932444224,
+      "tbt": 89
+    },
+    "/nfts/1:desktop": {
+      "performance": 75,
+      "accessibility": 96,
+      "bestPractices": 96,
+      "seo": 82,
+      "lcp": 6736.159700000008,
+      "cls": 0,
+      "tbt": 10
+    },
+    "/nfts/1:mobile": {
+      "performance": 81,
+      "accessibility": 96,
+      "bestPractices": 96,
+      "seo": 82,
+      "lcp": 4449.894375,
+      "cls": 0.00008750282932444224,
+      "tbt": 51.5
+    }
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "generatedAt": "2026-10-10T21:08:00Z",
+  "generatedOnPlatform": "win32",
+  "projectType": "webapp",
+  "devServer": {
+    "command": "npm",
+    "args": [
+      "run",
+      "dev",
+      "--",
+      "--host",
+      "127.0.0.1",
+      "--port",
+      "4173"
+    ],
+    "url": "http://127.0.0.1:4173",
+    "readyTimeoutSeconds": 120
+  },
+  "setup": [],
+  "assertions": [
+    {
+      "name": "production-build",
+      "kind": "process",
+      "command": "npm",
+      "args": [
+        "run",
+        "build"
+      ],
+      "verificationMethod": "exit-code",
+      "expected": "0",
+      "timeoutSeconds": 180
+    },
+    {
+      "name": "marketplace-e2e",
+      "kind": "process",
+      "command": "npm",
+      "args": [
+        "run",
+        "test:e2e",
+        "--",
+        "tests/marketplace.spec.ts",
+        "--project=chromium",
+        "--workers=1"
+      ],
+      "verificationMethod": "test-results",
+      "expected": "0",
+      "timeoutSeconds": 180
+    },
+    {
+      "name": "visual-regression",
+      "kind": "process",
+      "command": "npm",
+      "args": [
+        "run",
+        "test:e2e",
+        "--",
+        "tests/visual.spec.ts",
+        "--project=chromium",
+        "--project=mobile-chromium",
+        "--workers=1"
+      ],
+      "verificationMethod": "test-results",
+      "expected": "0",
+      "timeoutSeconds": 180
+    },
+    {
+      "name": "tests-pass",
+      "kind": "process",
+      "command": "npm",
+      "args": [
+        "run",
+        "test:e2e",
+        "--",
+        "--project=chromium",
+        "--workers=1"
+      ],
+      "verificationMethod": "test-results",
+      "expected": "0",
+      "timeoutSeconds": 180
+    }
+  ]
+}

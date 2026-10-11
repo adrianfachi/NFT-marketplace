@@ -1,0 +1,169 @@
+{
+  "planHash": "d2b5626d7b991e13046ff26cf174ea8295893f4b289fb75a7170b15abbd95581",
+  "phase": "standalone",
+  "recordedAtUtc": "2026-10-11T00:43:15.1261936Z",
+  "retryCount": 0,
+  "resetBaseline": false,
+  "complete": true,
+  "result": {
+    "setupSucceeded": true,
+    "setupDurationMs": 0,
+    "setupFailureOutput": null,
+    "assertions": [
+      {
+        "name": "production-build",
+        "kind": "process",
+        "verificationMethod": "exit-code",
+        "passed": true,
+        "timedOut": false,
+        "skipped": false,
+        "skippedReason": null,
+        "exitCode": 0,
+        "outputSample": "\r\n\u003E frontend@0.0.0 build\r\n\u003E tsc -b \u0026\u0026 vite build\r\n\r\n\u001B[33m(!) Your Vite config uses features that are unsupported by \u0060configLoader: \u0027native\u0027\u0060, which is planned to become the default in a future major version of Vite:\r\n  - \u0060__dirname\u0060 (vite.config.ts:17:25). Use \u0060import.meta.dirname\u0060 instead\r\nSet \u0060VITE_CONFIG_NATIVE_IGNORE_WARNING=true\u0060 to suppress this warning.\u001B[39m\r\n\u001B[36mvite v8.3.4 \u001B[32mbuilding client environment for production...\u001B[36m\u001B[39m\r\ntransforming...\r\n\r\n./files/geist-cyrillic-wght-normal.woff2 referenced in ./files/geist-cyrillic-wght-normal.woff2 didn\u0027t resolve at build time, it will remain unchanged to be resolved at runtime\r\n\r\n./files/geist-latin-ext-wght-normal.woff2 referenced in ./files/geist-latin-ext-wght-normal.woff2 didn\u0027t resolve at build time, it will remain unchanged to be resolved at runtime\r\n\r\n./files/geist-vietnamese-wght-normal.woff2 referenced in ./files/geist-vietnamese-wght-normal.woff2 didn\u0027t resolve at build time, it will remain unchanged to be resolved at runtime\r\n\r\n./files/geist-cyrillic-ext-wght-normal.woff2 referenced in ./files/geist-cyrillic-ext-wght-normal.woff2 didn\u0027t resolve at build time, it will remain unchanged to be resolved at runtime\r\n\r\n./files/geist-latin-wght-normal.woff2 referenced in ./files/geist-latin-wght-normal.woff2 didn\u0027t resolve at build time, it will remain unchanged to be resolved at runtime\r\n\u2713 2210 modules transformed.\r\nrendering chunks...\r\ncomputing gzip size...\r\ndist/index.html                               0.79 kB \u2502 gzip:  0.43 kB\r\ndist/assets/EmeraldApe-3LZgOEu9.png       1,885.43 kB\r\ndist/assets/GoldenBeat-uhJLsIjn.png       1,978.60 kB\r\ndist/assets/IvoryBaron-4rfD07eb.png       2,027.33 kB\r\ndist/assets/SageNomad-CfwfEi4n.png        2,068.52 kB\r\ndist/assets/index-Bl7ycxzi.css               42.72 kB \u2502 gzip:  9.61 kB\r\ndist/assets/login-BDJ2_OTd.js                 0.18 kB \u2502 gzip:  0.16 kB\r\ndist/assets/register-gofYjxrU.js              0.19 kB \u2502 gzip:  0.17 kB\r\ndist/assets/rolldown-runtime-hePW80VL.js      0.71 kB \u2502 gzip:  0.42 kB\r\ndist/assets/useCart-1xFHQyZH.js               1.00 kB \u2502 gzip:  0.50 kB\r\ndist/assets/success-iCmJukk2.js               2.54 kB \u2502 gzip:  0.93 kB\r\ndist/assets/wallets-BNzb-mNy.js               2.88 kB \u2502 gzip:  1.11 kB\r\ndist/assets/cart-foFsDG7y.js                  3.05 kB \u2502 gzip:  1.30 kB\r\ndist/assets/profile-DeeARGNd.js               3.28 kB \u2502 gzip:  1.21 kB\r\ndist/assets/routes-yaUWDgtg.js                3.76 kB \u2502 gzip:  1.43 kB\r\ndist/assets/_nftId-k_CSk6co.js                4.45 kB \u2502 gzip:  1.94 kB\r\ndist/assets/checkout-CkX2ulKK.js              8.61 kB \u2502 gzip:  2.78 kB\r\ndist/assets/Kurio-DW6muCBM.js               108.02 kB \u2502 gzip: 38.17 kB\r\ndist/assets/api-PuxZBrOL.js                 184.22 kB \u2502 gzip: 62.64 kB\r\ndist/assets/index-CNDC6W8O.js               237.54 kB \u2502 gzip: 74.55 kB\r\n\r\n\u001B[32m\u2713 built in 2.68s\u001B[39m\r\n",
+        "durationMs": 11719
+      },
+      {
+        "name": "marketplace-e2e",
+        "kind": "process",
+        "verificationMethod": "test-results",
+        "passed": true,
+        "timedOut": false,
+        "skipped": false,
+        "skippedReason": null,
+        "exitCode": 0,
+        "outputSample": "\r\n\u003E frontend@0.0.0 test:e2e\r\n\u003E playwright test tests/marketplace.spec.ts --project=chromium --workers=1\r\n\r\n\r\nRunning 6 tests using 1 worker\r\n\r\n[1/6] [chromium] \u203A tests\\marketplace.spec.ts:12:3 \u203A Kurio marketplace \u203A discovers NFTs and navigates to a detail page\r\n[2/6] [chromium] \u203A tests\\marketplace.spec.ts:21:3 \u203A Kurio marketplace \u203A registers a collector and shows the profile\r\n[3/6] [chromium] \u203A tests\\marketplace.spec.ts:32:3 \u203A Kurio marketplace \u203A updates quantity optimistically and completes checkout\r\n[4/6] [chromium] \u203A tests\\marketplace.spec.ts:50:3 \u203A Kurio marketplace \u203A footer actions navigate and newsletter validates\r\n[5/6] [chromium] \u203A tests\\marketplace.spec.ts:60:3 \u203A Kurio marketplace \u203A persists catalog search in the URL and toggles favorites\r\n[6/6] [chromium] \u203A tests\\marketplace.spec.ts:73:3 \u203A Kurio marketplace \u203A applies the deterministic coupon in the cart\r\n  6 passed (20.4s)\r\n",
+        "durationMs": 22188,
+        "testResults": {
+          "testFramework": "vitest",
+          "runnerDetectedFrom": "package_json",
+          "testsTotal": 0,
+          "testsPassed": 0,
+          "testsFailed": 0,
+          "testsSkipped": 0,
+          "parseFailed": true
+        }
+      },
+      {
+        "name": "visual-regression",
+        "kind": "process",
+        "verificationMethod": "test-results",
+        "passed": true,
+        "timedOut": false,
+        "skipped": false,
+        "skippedReason": null,
+        "exitCode": 0,
+        "outputSample": "\r\n\u003E frontend@0.0.0 test:e2e\r\n\u003E playwright test tests/visual.spec.ts --project=chromium --project=mobile-chromium --workers=1\r\n\r\n\r\nRunning 8 tests using 1 worker\r\n\r\n[1/8] [chromium] \u203A tests\\visual.spec.ts:13:5 \u203A visual regression \u203A / matches the desktop baseline\r\n[2/8] [chromium] \u203A tests\\visual.spec.ts:13:5 \u203A visual regression \u203A /cart matches the desktop baseline\r\n[3/8] [chromium] \u203A tests\\visual.spec.ts:13:5 \u203A visual regression \u203A /checkout matches the desktop baseline\r\n[4/8] [chromium] \u203A tests\\visual.spec.ts:21:3 \u203A visual regression \u203A home matches the mobile baseline\r\n[5/8] [mobile-chromium] \u203A tests\\visual.spec.ts:13:5 \u203A visual regression \u203A / matches the desktop baseline\r\n[6/8] [mobile-chromium] \u203A tests\\visual.spec.ts:13:5 \u203A visual regression \u203A /cart matches the desktop baseline\r\n[7/8] [mobile-chromium] \u203A tests\\visual.spec.ts:13:5 \u203A visual regression \u203A /checkout matches the desktop baseline\r\n[8/8] [mobile-chromium] \u203A tests\\visual.spec.ts:21:3 \u203A visual regression \u203A home matches the mobile baseline\r\n  4 skipped\r\n  4 passed (26.1s)\r\n",
+        "durationMs": 28056,
+        "testResults": {
+          "testFramework": "vitest",
+          "runnerDetectedFrom": "package_json",
+          "testsTotal": 0,
+          "testsPassed": 0,
+          "testsFailed": 0,
+          "testsSkipped": 0,
+          "parseFailed": true
+        }
+      },
+      {
+        "name": "tests-pass",
+        "kind": "process",
+        "verificationMethod": "test-results",
+        "passed": true,
+        "timedOut": false,
+        "skipped": false,
+        "skippedReason": null,
+        "exitCode": 0,
+        "outputSample": "\r\n\u003E frontend@0.0.0 test:e2e\r\n\u003E playwright test --project=chromium --workers=1\r\n\r\n\r\nRunning 10 tests using 1 worker\r\n\r\n[1/10] [chromium] \u203A tests\\marketplace.spec.ts:12:3 \u203A Kurio marketplace \u203A discovers NFTs and navigates to a detail page\r\n[2/10] [chromium] \u203A tests\\marketplace.spec.ts:21:3 \u203A Kurio marketplace \u203A registers a collector and shows the profile\r\n[3/10] [chromium] \u203A tests\\marketplace.spec.ts:32:3 \u203A Kurio marketplace \u203A updates quantity optimistically and completes checkout\r\n[4/10] [chromium] \u203A tests\\marketplace.spec.ts:50:3 \u203A Kurio marketplace \u203A footer actions navigate and newsletter validates\r\n[5/10] [chromium] \u203A tests\\marketplace.spec.ts:60:3 \u203A Kurio marketplace \u203A persists catalog search in the URL and toggles favorites\r\n[6/10] [chromium] \u203A tests\\marketplace.spec.ts:73:3 \u203A Kurio marketplace \u203A applies the deterministic coupon in the cart\r\n[7/10] [chromium] \u203A tests\\visual.spec.ts:13:5 \u203A visual regression \u203A / matches the desktop baseline\r\n[8/10] [chromium] \u203A tests\\visual.spec.ts:13:5 \u203A visual regression \u203A /cart matches the desktop baseline\r\n[9/10] [chromium] \u203A tests\\visual.spec.ts:13:5 \u203A visual regression \u203A /checkout matches the desktop baseline\r\n[10/10] [chromium] \u203A tests\\visual.spec.ts:21:3 \u203A visual regression \u203A home matches the mobile baseline\r\n  1 skipped\r\n  9 passed (35.4s)\r\n",
+        "durationMs": 37483,
+        "testResults": {
+          "testFramework": "vitest",
+          "runnerDetectedFrom": "package_json",
+          "testsTotal": 0,
+          "testsPassed": 0,
+          "testsFailed": 0,
+          "testsSkipped": 0,
+          "parseFailed": true
+        }
+      }
+    ],
+    "executions": [
+      {
+        "source": "devServer",
+        "resolvedExecutable": "C:\\Program Files\\nodejs\\npm.CMD",
+        "args": [
+          "run",
+          "dev",
+          "--",
+          "--host",
+          "127.0.0.1",
+          "--port",
+          "4173"
+        ],
+        "cwd": "C:\\Users\\adria\\OneDrive - PUCRS - BR\\Documentos\\Estudos\\NFT-marketplace\\frontend",
+        "env": {},
+        "prependPath": [],
+        "platform": "win32"
+      },
+      {
+        "source": "production-build",
+        "resolvedExecutable": "C:\\Program Files\\nodejs\\npm.CMD",
+        "args": [
+          "run",
+          "build"
+        ],
+        "cwd": "C:\\Users\\adria\\OneDrive - PUCRS - BR\\Documentos\\Estudos\\NFT-marketplace\\frontend",
+        "env": {},
+        "prependPath": [],
+        "platform": "win32"
+      },
+      {
+        "source": "marketplace-e2e",
+        "resolvedExecutable": "C:\\Program Files\\nodejs\\npm.CMD",
+        "args": [
+          "run",
+          "test:e2e",
+          "--",
+          "tests/marketplace.spec.ts",
+          "--project=chromium",
+          "--workers=1"
+        ],
+        "cwd": "C:\\Users\\adria\\OneDrive - PUCRS - BR\\Documentos\\Estudos\\NFT-marketplace\\frontend",
+        "env": {},
+        "prependPath": [],
+        "platform": "win32"
+      },
+      {
+        "source": "visual-regression",
+        "resolvedExecutable": "C:\\Program Files\\nodejs\\npm.CMD",
+        "args": [
+          "run",
+          "test:e2e",
+          "--",
+          "tests/visual.spec.ts",
+          "--project=chromium",
+          "--project=mobile-chromium",
+          "--workers=1"
+        ],
+        "cwd": "C:\\Users\\adria\\OneDrive - PUCRS - BR\\Documentos\\Estudos\\NFT-marketplace\\frontend",
+        "env": {},
+        "prependPath": [],
+        "platform": "win32"
+      },
+      {
+        "source": "tests-pass",
+        "resolvedExecutable": "C:\\Program Files\\nodejs\\npm.CMD",
+        "args": [
+          "run",
+          "test:e2e",
+          "--",
+          "--project=chromium",
+          "--workers=1"
+        ],
+        "cwd": "C:\\Users\\adria\\OneDrive - PUCRS - BR\\Documentos\\Estudos\\NFT-marketplace\\frontend",
+        "env": {},
+        "prependPath": [],
+        "platform": "win32"
+      }
+    ]
+  }
+}
